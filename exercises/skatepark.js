@@ -10,6 +10,11 @@ class SkatePark {
     } else {
       this.isPrivate = true;
     }
+    if (obj.price === undefined)  {
+      this.cost = 0
+    } else {
+      this.cost = obj.price;
+    }
   }
 }
 
