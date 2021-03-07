@@ -4,6 +4,7 @@ class Skater  {
     this.name = obj.name;
     this.skill = obj.skill;
     this.tricks = obj.tricks;
+    this.money = obj.cash;
   }
 }
 
