@@ -3,6 +3,7 @@ class SkatePark {
     obj = obj || {}
     this.name = obj.name;
     this.yearFounded = obj.year;
+    this.style = obj.type;
   }
 }
 
