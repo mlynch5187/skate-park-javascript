@@ -3,6 +3,7 @@ class Skater  {
     obj = obj || {};
     this.name = obj.name;
     this.skill = obj.skill;
+    this.tricks = obj.tricks;
   }
 }
 
