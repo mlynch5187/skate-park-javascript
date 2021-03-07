@@ -5,6 +5,7 @@ class SkatePark {
     this.yearFounded = obj.year;
     this.style = obj.type;
     this.features = obj.features;
+    this.occupants = [];
     if (obj.isPrivate === undefined) {
       this.isPrivate = false;
     } else {
