@@ -17,6 +17,17 @@ class SkatePark {
       this.cost = obj.price;
     }
   }
+
+  admit(skater) {
+    if (this.isPrivate === false)  {
+      this.occupants.push(skater);
+      return `Welcome to the free ${this.name} Skatepark!`;
+    } else {
+      this.occupants.push(skater);
+      skater.money -= this.cost;
+      return `Welcome to ${this.name}, the cost will be $${this.cost}.00.`;
+    }
+  }
 }
 
 module.exports = SkatePark;
