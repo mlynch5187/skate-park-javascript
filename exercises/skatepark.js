@@ -22,10 +22,12 @@ class SkatePark {
     if (this.isPrivate === false)  {
       this.occupants.push(skater);
       return `Welcome to the free ${this.name} Skatepark!`;
-    } else {
+    } else if (skater.money >= this.cost) {
       this.occupants.push(skater);
       skater.money -= this.cost;
       return `Welcome to ${this.name}, the cost will be $${this.cost}.00.`;
+    } else {
+      return  'Sorry, you don\'t have enough money.'
     }
   }
 }
