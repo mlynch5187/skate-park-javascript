@@ -7,6 +7,12 @@ class Skater  {
     this.money = obj.cash;
     this.frustration = 0;
   }
+
+  practice(trick)  {
+    if (!this.tricks[trick]) {
+      this.frustration++;      
+    }
+  }
 }
 
 module.exports = Skater;
